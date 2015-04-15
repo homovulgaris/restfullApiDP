@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lemma:</strong>
+  <%= @noun.lemma %>
+</p>
+
+<p>
+  <strong>Pos:</strong>
+  <%= @noun.pos %>
+</p>
+
+<p>
+  <strong>Lexdomname:</strong>
+  <%= @noun.lexdomname %>
+</p>
+
+<p>
+  <strong>Lexdom:</strong>
+  <%= @noun.lexdom %>
+</p>
+
+<%= link_to 'Edit', edit_noun_path(@noun) %> |
+<%= link_to 'Back', nouns_path %>

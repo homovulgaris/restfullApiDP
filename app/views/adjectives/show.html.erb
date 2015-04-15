@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Lemma:</strong>
+  <%= @adjective.lemma %>
+</p>
+
+<p>
+  <strong>Pos:</strong>
+  <%= @adjective.pos %>
+</p>
+
+<p>
+  <strong>Lexdomname:</strong>
+  <%= @adjective.lexdomname %>
+</p>
+
+<p>
+  <strong>Lexdom:</strong>
+  <%= @adjective.lexdom %>
+</p>
+
+<%= link_to 'Edit', edit_adjective_path(@adjective) %> |
+<%= link_to 'Back', adjectives_path %>
