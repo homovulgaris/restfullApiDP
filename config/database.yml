@@ -7,10 +7,10 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  database: dp_restfullapidb
-  username: marcin
+  database: marcinDP #dp_restfullapidb
+  username: marcin #
   password: zelenasova
-  host: 127.0.0.1
+  host: 147.175.149.250 #127.0.0.1
   port: 3306
 
 
