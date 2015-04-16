@@ -50,4 +50,9 @@ group :development, :test do
   gem 'capistrano-passenger'
 end
 
+group :production do
+  # for asset compilation
+  gem 'therubyracer'
+end
+
 gem 'responders', '~> 2.0'
