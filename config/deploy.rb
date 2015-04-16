@@ -1,8 +1,15 @@
 # config valid only for current version of Capistrano
 lock '3.4.0'
 
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'wndict'
+set :repo_url, 'git@github.com:homovulgaris/restfullApiDP.git'
+
+set :deploy_to, '/home/deploy/wndict'
+
+set :rbenv_type, :user
+set :rbenv_ruby, '1.9.3-p551'
+
+set :linked_dirs, %w{log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
