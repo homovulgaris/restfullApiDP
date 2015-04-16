@@ -53,6 +53,7 @@ end
 group :production do
   # for asset compilation
   gem 'therubyracer'
+  gem 'passenger'
 end
 
 gem 'responders', '~> 2.0'
