@@ -43,7 +43,7 @@ class IntentGroupisationsController < ApplicationController
 
   def query_params
     #params.permit(:link, :intent)
-    params.required(:query_groupisation).permit(:link, :intent)
+    params.required(:intent_groupisation).permit(:link, :intent)
 
   end
 
