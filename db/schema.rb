@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150325134934) do
+ActiveRecord::Schema.define(version: 20150422094950) do
 
   create_table "adjectives", force: :cascade do |t|
     t.text     "lemma",      limit: 65535
@@ -22,11 +22,25 @@ ActiveRecord::Schema.define(version: 20150325134934) do
     t.datetime "updated_at",               null: false
   end
 
+  create_table "intent_groupisations", force: :cascade do |t|
+    t.text     "intent",     limit: 65535
+    t.text     "link",       limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
   create_table "nouns", force: :cascade do |t|
     t.text     "lemma",      limit: 65535
     t.text     "pos",        limit: 65535
     t.text     "lexdomname", limit: 65535
     t.text     "lexdom",     limit: 65535
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
+  end
+
+  create_table "query_groupisations", force: :cascade do |t|
+    t.text     "intent",     limit: 65535
+    t.text     "link",       limit: 65535
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
