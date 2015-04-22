@@ -4,6 +4,14 @@ Rails.application.routes.draw do
 
 
 
+  post '/query/save', to: 'query_groupisations#create'
+  get  '/query/get', to: 'query_groupisations#show'
+
+  post '/intent/save', to: 'intent_groupisations#create'
+  get  '/intent/get', to: 'intent_groupisations#show'
+
+
+
   #povodne boli resources :nouns
 
   # The priority is based upon order of creation: first created -> highest priority.
