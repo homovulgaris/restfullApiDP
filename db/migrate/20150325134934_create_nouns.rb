@@ -5,7 +5,7 @@ class CreateNouns < ActiveRecord::Migration
       t.text :pos
       t.text :lexdomname
       t.text :lexdom
-
+      t.text :plu
       t.timestamps null: false
     end
   end
